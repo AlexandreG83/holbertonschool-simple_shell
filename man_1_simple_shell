@@ -38,7 +38,7 @@ The shell uses the PATH environment variable to locate executables.
 The shell returns the exit status of the last executed command.
 
 .SH AUTHOR
-Written by Holberton School students.
+Written by Alexandre GUILLAMON.
 
 .SH SEE ALSO
 sh(1), execve(2), fork(2), wait(2)
