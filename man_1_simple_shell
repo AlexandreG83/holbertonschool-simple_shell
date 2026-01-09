@@ -1,0 +1,44 @@
+.TH HSH 1 "Simple Shell" "Holberton School"
+.SH NAME
+hsh \- simple UNIX command interpreter
+
+.SH SYNOPSIS
+.B hsh
+
+.SH DESCRIPTION
+.B hsh
+is a simple UNIX command line interpreter.
+
+It reads commands from standard input and executes them using the
+execve system call.
+
+The shell works in interactive and non-interactive modes.
+
+.SH INVOCATION
+Interactive mode:
+.PP
+.nf
+$ ./hsh
+($)
+.fi
+
+Non-interactive mode:
+.PP
+.nf
+$ echo "ls" | ./hsh
+.fi
+
+.SH BUILTINS
+This shell does not implement built-in commands.
+
+.SH ENVIRONMENT
+The shell uses the PATH environment variable to locate executables.
+
+.SH RETURN VALUE
+The shell returns the exit status of the last executed command.
+
+.SH AUTHOR
+Written by Holberton School students.
+
+.SH SEE ALSO
+sh(1), execve(2), fork(2), wait(2)
