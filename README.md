@@ -22,3 +22,13 @@ The shell replicates basic functionalities of `/bin/sh`. It works in both **inte
 
 ### Compilation
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+# Interactive Mode
+$ ./hsh
+($) ls
+file1 file2
+($) exit
+
+# Non-Interactive Mode
+$ echo "ls" | ./hsh
+file1 file2
